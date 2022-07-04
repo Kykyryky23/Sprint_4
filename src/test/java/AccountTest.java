@@ -21,11 +21,15 @@ public class AccountTest {
     public static Object[][] getSexData() {
         return new Object[][] {
                 { "Ти", "false"},
-                { "Тимоти Шаламеeeeeeeee", "false"},
                 { " Тимоти Шаламе", "false"},
                 { "Тимоти Шаламе ", "false"},
                 { "Тимоти  Шаламе", "false"},
                 { "ТимотиШаламе", "false"},
+                { "Тимоти Шаламеeeeeeee", "false"},
+                { null, "false"},
+                { "", "false"},
+                { "Т и", "true"},
+                { "Тимоти Шаламеeeeeee", "true"},
                 { "Тимоти Шаламе", "true"},
         };
     }
